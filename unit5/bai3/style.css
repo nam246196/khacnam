@@ -11,12 +11,13 @@
 }
 ul {
 	background: #23354b;
-	display: flex;
+	float: left;
 }
 ul li {
 	position: relative;
 	padding: 10px 20px;
 	border-right: 1px dashed #36536e;
+	float: left;
 }
 ul li a {
 	color: #c9caca;
@@ -47,6 +48,7 @@ ul li:hover > ul {
 ul li li {
 	background: #385671;
 	border-bottom: 1px dashed #547686;
+	width: 100%;
 }
 ul li ul li a {
 	color: #dbe0e5;
