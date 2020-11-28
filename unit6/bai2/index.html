@@ -16,35 +16,44 @@
     <div class="container">
         <div class="row blog">
             <div class="col-sm-5">
+
                 <img src="img/430x530.png" alt="">
             </div>
 
             <div class="col-sm-7">
                 <div class="form">
                     <h4 class="title">Titre de I'article</h4>
-                    <form action="">
+                    <form action="" method="POST" enctype="multipart/form-data">
                         <label for="">Name <input type="text" placeholder="Pet's name"></label>
-                        <label for=""><input type="file" placeholder="Pet's name"> Upload a photo</label>
+                        <label for="avatar"><input id="avatar" type="file" name="avatar"><div class="up_avatar"><i class="fas fa-camera"></i></div> Upload a photo</label>
                         <label for="">Breed <input placeholder="Pet's breed" type="text"></label>
-                        <label for="">Birthday <input placeholder="MM/DD/YYY" type="number"></label>
+                        <label for="">Birthday <input placeholder="MM/DD/YYY" type="date"></label>
                         <label for="">Gender
                             <div class="sender">
-                                <span class="btn active">Female</span>
-                                <span class="btn ">Male</span>
+                                <input id="Female" type="radio" name="checksender">
+                                <label id="Female" for="">Female</label>
+                                <input id="Male" type="radio" name="checksender">
+                                <label id="Male" check for="">Male</label>
                             </div>
                         </label>
                         <label for="">Spayed or Neutered
                             <div class="spayed">
-                                <span class="btn active">Spayed</span>
-                                <span class="btn ">Neutered</span>
+                                <input type="radio" name="checkspayed">
+                                <label for="">Spayed</label>
+                                <input type="radio" name="checkspayed">
+                                <label for="">Neutered</label>
                             </div>
                         </label>
                         <label class="width_100" for="">Weight
                             <div class="weight">
-                                <span class="btn active">0-25 lbs</span>
-                                <span class="btn ">25-50 lbs</span>
-                                <span class="btn ">50-100 lbs</span>
-                                <span class="btn ">100 + lbs</span>
+                                <input type="radio" name="checkweight">
+                                <label for="">0-25 lbs</label>
+                                <input type="radio" name="checkweight">
+                                <label for="">25-50 lbs</label>
+                                <input type="radio" name="checkweight">
+                                <label for="">50-100 lbs</label>
+                                <input type="radio" name="checkweight">
+                                <label for="">100 + lbs</label>
                             </div>
                         </label>
                     </form>
