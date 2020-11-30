@@ -1,10 +1,10 @@
 * {
 	margin: 0;
 	padding: 0;
-    font-family: roboto;
 }
 body {
     font-size: 14px;
+    font-family: roboto;
 }
 ul li {
     list-style: none;
@@ -18,7 +18,7 @@ img {
 .padding_70 {
     padding:70px;
 }
-.height_100 {
+.full-height {
     height: 100%;
 }
 .border_left {
